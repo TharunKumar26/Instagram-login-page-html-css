@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+
+    <style>
+      body {
+        font-family: "Roboto";
+      }
+      .outer {
+        display: table;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-color: rgb(250, 250, 250);
+      }
+
+      .middle {
+        display: table-cell;
+        vertical-align: middle;
+        border: 1px solid black;
+      }
+
+      .inner {
+        margin-left: auto;
+        margin-right: auto;
+        width: 350px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0px 0px 1px 1px rgba(219, 219, 219, 4);
+        margin-top: 10px;
+        background-color: white;
+      }
+      #bottom {
+        margin-left: auto;
+        margin-right: auto;
+        width: 400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        align-items: center;
+
+        margin-top: 10px;
+      }
+
+      input[type="submit"] {
+        background-color: rgb(178, 223, 252);
+        border: none;
+        width: 270px;
+        margin-top: 8px;
+        margin-bottom: 8px;
+        height: 30px;
+        border-radius: 2px;
+        padding: 2px;
+        color: white;
+        font-size: 15px;
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+      }
+      input[type="text"],
+      input[type="password"] {
+        background-color: rgb(250, 250, 250);
+
+        border: 1px solid rgb(219, 219, 219);
+        width: 270px;
+
+        margin-bottom: 8px;
+        height: 35px;
+        padding: 2px;
+        padding-left: 10px;
+        border-radius: 2px;
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+      }
+      input[type="text"]:focus {
+        outline: none;
+      }
+      input[type="password"]:focus {
+        outline: none;
+      }
+      input[type="submit"]:hover {
+        cursor: pointer;
+      }
+      .line_small {
+        border-bottom: 1px solid black;
+        width: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="outer">
+      <div class="middle">
+        <div class="inner">
+          <div class="logo" style="height: 120px">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNCLZHKTLEOKZDwh3sr39VHnlLzrHquaLv3nSA2OUdWdLl1cljz8P6E2k16ov-yr0a-lA&usqp=CAU"
+              width="200"
+            />
+          </div>
+
+          <div class="login">
+            <form action="/login" method="POST" class="login">
+              <input
+                type="text"
+                name="name"
+                placeholder="Phone number, username, or email"
+              />
+              <br />
+              <input name="password" type="password" placeholder="Password" />
+              <br />
+              <input
+                type="submit"
+                placeholder="Phone number, username, or email"
+                value="Log in"
+              />
+            </form>
+          </div>
+
+          <div
+            class="other_options"
+            style="display: flex; width: 270px; margin-top: 12px"
+          >
+            <hr
+              style="
+                width: 150px;
+                color: rgb(152, 153, 164);
+                text-align: left;
+                margin-left: 0;
+              "
+            />
+            <span
+              style="
+                margin-left: 10px;
+                margin-right: 10px;
+                font-size: 14px;
+                color: rgb(152, 153, 164);
+              "
+              >OR</span
+            >
+            <hr
+              style="
+                width: 150px;
+                text-align: right;
+                margin-left: 0;
+                color: rgb(152, 153, 164);
+              "
+            />
+          </div>
+
+          <div
+            class="fb_login"
+            style="
+              color: rgb(39, 77, 160);
+              margin-top: 17px;
+              font-weight: 650;
+              font-size: 14px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+            "
+          >
+            <img
+              src="https://i.pinimg.com/736x/ac/57/3b/ac573b439cde3dec8ca1c6739ae7f628.jpg"
+              width="25"
+              style="margin-right: 10px"
+            />
+            Log in with Facebook
+          </div>
+          <div
+            class="resetpassword"
+            style="
+              margin-top: 20px;
+              color: rgb(15, 53, 134);
+              margin-bottom: 15px;
+              font-size: 13px;
+            "
+          >
+            Forgot password?
+          </div>
+        </div>
+        <div class="inner">
+          <div
+            class="register"
+            style="
+              margin-top: 17px;
+              margin-bottom: 17px;
+              font-size: 13px;
+              font-weight: 100;
+            "
+          >
+            Don't have an account? <a href="#">Sign up</a>
+          </div>
+        </div>
+        <div id="bottom">
+          <div class="register" style="font-size: 13.5px; font-weight: 100">
+            Get the app
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
